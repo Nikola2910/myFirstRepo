@@ -356,13 +356,16 @@ section#team div.team-members-all div.team-member-solo h5 {
   font-weight: 600;
 }
 
-div.color i.fa-facebook {
+div.color i.fa-facebook,
+div.third div i.fa-facebook {
   color: #3b5998;
 }
-div.color i.fa-twitter {
+div.color i.fa-twitter,
+div.third div i.fa-twitter {
   color: #38a1f3;
 }
-div.color i.fa-google-plus-g {
+div.color i.fa-google-plus-g,
+div.third div i.fa-google-plus-g {
   color: #ff3e30;
 }
 
@@ -407,7 +410,9 @@ section#contacts form {
   flex-direction: column;
 }
 
-section#contacts form div {
+section#contacts form div.first,
+section#contacts form div.second,
+section#contacts form div.third {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -450,6 +455,7 @@ div.second textarea:focus::-webkit-input-placeholder {
 div.third {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 div.third input {
@@ -461,9 +467,38 @@ div.third input {
   border-radius: 10px;
 }
 
-div.third img {
+div.third div.social-icons-footer {
+  display: flex;
+  width: 220px;
+  padding: 0;
+}
+
+div.third div.social-icons-footer a {
   display: inline-block;
-  width: 200px;
+  margin: 0 10px;
+  padding: 0;
+}
+
+div.social-icons-footer a:last-child {
+  margin-right: 0;
+}
+
+div.third div i.fa-instagram {
+  color: #e4405f;
+}
+
+div.third div i.fa-linkedin {
+  color: #0e76a8;
+}
+
+div.third div a {
+  -webkit-filter: brightness(100%);
+}
+
+div.third div a:hover {
+  -webkit-filter: brightness(150%);
+  -webkit-transform: scale(1.7);
+  transition: 0.5s;
 }
 
 footer {
@@ -587,10 +622,13 @@ footer p {
 
   div.third input {
     width: 100%;
+    margin-bottom: 18px;
   }
 
-  div.third img {
-    margin: 15px auto;
+  div.third div {
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
