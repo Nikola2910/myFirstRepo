@@ -346,8 +346,8 @@ section#team div.team-members-all div.team-member-solo {
 }
 
 section#team div.team-members-all div.team-member-solo img:hover {
-  -webkit-transform: scale(1.2);
-  transition: 0.8s;
+  -webkit-transform: scale(1.2) rotate(360deg);
+  transition: 1s;
 }
 
 section#team div.team-members-all div.team-member-solo img {
@@ -678,4 +678,6 @@ ul li a:hover {
   background-color: #f76126;
   margin: 5px 0;
   font-weight: bold;
+  -webkit-transform: scale(1.1);
+  transition: 0.3s;
 }
