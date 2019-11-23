@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 h1.title {
@@ -32,7 +33,7 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 header nav div {
@@ -680,4 +681,24 @@ ul li a:hover {
   font-weight: bold;
   -webkit-transform: scale(1.1);
   transition: 0.3s;
+}
+
+/*Back to top*/
+
+div.gotop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 54px;
+  margin: 0;
+  text-decoration: none;
+}
+
+div.gotop a {
+  margin: 0;
+}
+div.gotop i {
+  color: #f76126;
+  background-color: #404952;
+  border-radius: 50%;
 }
